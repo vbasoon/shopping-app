@@ -4,7 +4,7 @@
     <main class="page">
       <div class="container">
         <h1>Main content</h1>
-        <blog-body :blogs="blogs" />
+        <Shopping-list />
       </div>
     </main>
 
@@ -12,35 +12,17 @@
   </div>
 </template>
 <script>
-import blogBody from "./components/blog.vue";
 import Header from "./components/header.vue";
 import Footer from "./components/footer.vue";
+import ShoppingList from "./components/shopping-list.vue";
 export default {
   data() {
-    return {
-      blogs: [
-        {
-          id: 1,
-          title: "Title1",
-          text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae blanditiis laborum quia exercitationem molestias tenetur veritatis doloribus natus accusantium velit?",
-        },
-        {
-          id: 2,
-          title: "Title2",
-          text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae blanditiis laborum quia exercitationem molestias tenetur veritatis doloribus natus accusantium velit?",
-        },
-        {
-          id: 3,
-          title: "Title3",
-          text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae blanditiis laborum quia exercitationem molestias tenetur veritatis doloribus natus accusantium velit?",
-        },
-      ],
-    };
+    return {};
   },
   components: {
     Header,
     Footer,
-    blogBody,
+    ShoppingList,
   },
 };
 </script>

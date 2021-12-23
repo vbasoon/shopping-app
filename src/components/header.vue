@@ -1,9 +1,15 @@
 <template>
-  <header class="header">Reditts</header>
+  <header class="header">{{ title }}</header>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      title: "Shopping List",
+    };
+  },
+};
 </script>
 
 <style lang="scss">
